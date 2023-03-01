@@ -1,13 +1,4 @@
 module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
-
-  bucket = "my-s3-bucket"
-  acl    = "private"
-
-  bucket_prefix = "chet-hosey"
-
-  versioning = {
-    enabled = true
-  }
-
+  source  = "app.terraform.io/aws-terraform-workshop-chetrhosey/s3-bucket/aws//examples/complete"
+  version = "2.8.0"
 }
